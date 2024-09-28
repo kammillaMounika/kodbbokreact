@@ -12,12 +12,14 @@ import {
 
 import Home from './pages/home';
 import Index from './pages';
+import SignUp from './pages/signUp';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
   <Route path="/" element={<App />}>
    <Route index element={<Index />} />
    <Route path="home" element={<Home />} />
+   <Route path="openSignUp" element={<SignUp />} />
 
    </Route>
 )

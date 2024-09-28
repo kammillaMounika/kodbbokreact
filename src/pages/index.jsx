@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export default function Index() {
 
@@ -53,10 +53,10 @@ export default function Index() {
 			<input type="submit"
 			 value = "LOGIN"/>
 			<hr></hr>
-            <a href = "/openResetPassword">Forgot password?</a>
-			<a href = "/openSignUp">Create new account</a>
-		</form>
-    
-    </>
-  )
+            </form>
+			<NavLink to ="/openSignUp">Create new account</NavLink>
+            </>
+	
+   
+  );
 }
